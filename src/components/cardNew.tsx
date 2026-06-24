@@ -19,9 +19,11 @@ export default function CardNew({
 }: listCardsType) {
   return (
     <div className="space-y-3">
-        <div className="relative">
-      <img src={image} className="h-[400px] w-full object-cover" alt={name} />
-      <span className="absolute top-3 left-3 bg-white shadow px-3 py-1 rounded-full text-sm">
+        <div className="relative overflow-hidden">
+          
+      <img src={image} className="h-[400px] w-full object-cover cursor-pointer transition-all
+      duration-300 hover:scale-95 hover:opacity-90" alt={name} />
+      <span className="absolute top-2 left-2 bg-white shadow px-3 py-1 rounded-full text-sm">
         {pourcentage}</span>
         </div>
       <h5>{category}</h5>

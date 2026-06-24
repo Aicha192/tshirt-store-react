@@ -17,8 +17,9 @@ export default function Card({
   size,
 }: listCardsType) {
   return (
-    <div className="space-y-3">
-      <img src={image} className="h-[400px] w-full object-cover" alt={name} />
+    <div className="space-y-3 overflow-hidden">
+      <img src={image} className="h-[400px] w-full object-cover cursor-pointer transition-all
+      duration-300 hover:scale-95 hover:opacity-90" alt={name} />
       <h5>{category}</h5>
       <h3 className="text-2xl font-semibold">{name}</h3>
       <p className="text-xl font-medium">{price} FCFA</p>
